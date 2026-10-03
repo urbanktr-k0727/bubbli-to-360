@@ -1,6 +1,6 @@
 # bubbli-to-360
 
-Bubbli は終わってしまったサービスです。共有URLが残っていれば、まだ360度写真として取り出せます。URLを1つ渡すと、Google フォトなどで部屋の中を見回せるJPEGが1枚できます。写真は自分のパソコンに保存されるだけで、外には送られません。
+[Bubbli](https://bubb.li/) は終わってしまったサービスです。共有URLが残っていれば、まだ360度写真として取り出せます。URLを1つ渡すと、Google フォトなどで部屋の中を見回せるJPEGが1枚できます。写真は自分のパソコンに保存されるだけで、外には送られません。
 
 ## 準備
 
@@ -48,7 +48,7 @@ Mac の Finder で「作成日」を見ると、iCloud や Synology Drive のよ
 
 ## English
 
-Bubbli has shut down. If you still have a share URL, this tool can turn it into one 360° JPEG that Google Photos and other panorama viewers can open. The pictures stay on your computer. Nothing is uploaded.
+[Bubbli](https://bubb.li/) has shut down. If you still have a share URL, this tool can turn it into one 360° JPEG that Google Photos and other panorama viewers can open. The pictures stay on your computer. Nothing is uploaded.
 
 You need Python 3.10 or newer. Check with `python3 --version`.
 
