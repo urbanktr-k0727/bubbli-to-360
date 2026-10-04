@@ -33,7 +33,7 @@ python convert_bubbli.py "https://on.bubb.li/ここにID/"
 
 終わると `out/ここにID/equirect.jpg` ができます。これが360度写真です。変換前の6枚は、同じ場所の `faces` フォルダに残してあります。
 
-プレビューや Google フォトで開くと、パノラマとして扱われます。共有ページに撮影日が残っていれば、その日時も写真の情報に入ります。時刻は、このパソコンのタイムゾーンに合わせています。
+プレビューや Google フォトで開くと、パノラマとして扱われます。左右が逆に見えないよう、書き出すときに左右を入れ替えています。それでも逆に見えたときだけ、URLの前に `--no-mirror` を付けてください。共有ページに撮影日が残っていれば、その日時も写真の情報に入ります。時刻は、このパソコンのタイムゾーンに合わせています。
 
 Mac の Finder で「作成日」を見ると、iCloud や Synology Drive のような同期フォルダでは、保存した日に戻ってしまうことがあります。撮影日を確認するときは、写真の情報にある Exif を見てください。
 
@@ -65,7 +65,7 @@ On Windows, use `.venv\Scripts\activate` instead of `source .venv/bin/activate`.
 
 The finished photo is `out/YOUR_ID/equirect.jpg`. The original six cube faces remain in `out/YOUR_ID/faces/`.
 
-The JPEG is marked as an equirectangular panorama. If the share page still has a capture time, that time is written into the photo's Exif, using your computer's timezone. On a Mac, Finder's created date can snap back to today when the file is in a synced folder such as iCloud. For the day the photo was taken, read the Exif date.
+The JPEG is marked as an equirectangular panorama. It is flipped left to right on export, so a 360° viewer does not show a mirror image. If it still looks reversed, run the command again with `--no-mirror` before the URL. If the share page still has a capture time, that time is written into the photo's Exif, using your computer's timezone. On a Mac, Finder's created date can snap back to today when the file is in a synced folder such as iCloud. For the day the photo was taken, read the Exif date.
 
 The share page can sit on "Loading..." and still convert. If it fails, check that these are still online:
 
