@@ -355,8 +355,9 @@ def main(argv: list[str] | None = None) -> None:
     )
     parser.add_argument(
         "--mirror",
-        action="store_true",
-        help="左右を反転してから保存する",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="左右を反転する（既定: する。逆にしたいときだけ --no-mirror）",
     )
     args = parser.parse_args(argv)
     if args.stamp_dates:
